@@ -19,6 +19,7 @@ class RenderColorWidget extends StatelessWidget {
           style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w600,
+            color: Colors.white,
           ),
         ),
       ),
