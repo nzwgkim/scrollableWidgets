@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scrollable_widgets/layout/main_layout.dart';
+import 'package:scrollable_widgets/screen/grid_view_screen.dart';
+import 'package:scrollable_widgets/screen/listview_screen.dart';
 import 'package:scrollable_widgets/screen/single_child_scroll_view_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,7 +23,23 @@ class HomeScreen extends StatelessWidget {
                               SingleChildScrollViewScreen(),
                         ),
                       ),
-                  child: const Text('SingleChildScrollView'))
+                  child: const Text('SingleChildScrollView')),
+              ElevatedButton(
+                  onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const ListViewScreen(),
+                        ),
+                      ),
+                  child: const Text('ListViewScreen')),
+              ElevatedButton(
+                  onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const GridViewScreen(),
+                        ),
+                      ),
+                  child: const Text('GridViewScreen ')),
             ],
           ),
         ));
