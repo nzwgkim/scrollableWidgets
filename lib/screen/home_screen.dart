@@ -110,6 +110,9 @@ class HomeScreen extends StatelessWidget {
                     'RefreshIndicatorScreen',
                     style: TextStyle(fontSize: 20),
                   )),
+              const SizedBox(
+                height: 50,
+              ),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -117,9 +120,12 @@ class HomeScreen extends StatelessWidget {
                               const FutureBuilderScreen(),
                         ),
                       ),
-                  child: const Text(
-                    'FutureBuilderScreen',
-                    style: TextStyle(fontSize: 20),
+                  child: Text(
+                    'StreamBuilder & FutureBuilder',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.amber[300],
+                        fontWeight: FontWeight.w700),
                   )),
             ],
           ),
