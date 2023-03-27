@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scrollable_widgets/layout/main_layout.dart';
+import 'package:scrollable_widgets/screen/custome_scroll_view_screen.dart';
 import 'package:scrollable_widgets/screen/grid_view_screen.dart';
 import 'package:scrollable_widgets/screen/listview_screen.dart';
 import 'package:scrollable_widgets/screen/reoderable_listview.dart';
@@ -49,6 +50,15 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                   child: const Text('ReorderableListViewScreen')),
+              ElevatedButton(
+                  onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              CustomerScrollViewScreen(),
+                        ),
+                      ),
+                  child: const Text(
+                      'CustomerScrollViewScreen-SliverChildListDelegate')),
             ],
           ),
         ));
