@@ -12,7 +12,7 @@ class RenderColorWidget extends StatelessWidget {
     print(number);
     return Container(
       color: color,
-      height: 300,
+      height: 200,
       child: Center(
         child: Text(
           number,
