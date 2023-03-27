@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:scrollable_widgets/layout/main_layout.dart';
-import 'package:scrollable_widgets/screen/custome_scroll_view_screen.dart';
+import 'package:scrollable_widgets/screen/custome_scroll_view_sliverlist_screen.dart';
 import 'package:scrollable_widgets/screen/grid_view_screen.dart';
 import 'package:scrollable_widgets/screen/listview_screen.dart';
 import 'package:scrollable_widgets/screen/reoderable_listview.dart';
 import 'package:scrollable_widgets/screen/single_child_scroll_view_screen.dart';
+
+import 'custome_scroll_view_slivergrid_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -54,11 +56,18 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
                           builder: (BuildContext context) =>
-                              CustomerScrollViewScreen(),
+                              CustomerScrollViewSliverListScreen(),
                         ),
                       ),
-                  child: const Text(
-                      'CustomerScrollViewScreen-SliverChildListDelegate')),
+                  child: const Text('CustomerScrollViewScreen-SliverList')),
+              ElevatedButton(
+                  onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              CustomerScrollViewSliverGridScreen(),
+                        ),
+                      ),
+                  child: const Text('CustomerScrollViewScreen-SliverGrid')),
             ],
           ),
         ));
