@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainLayout(
-        title: 'Home',
+        title: 'Scrollable Widgets',
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -27,7 +27,10 @@ class HomeScreen extends StatelessWidget {
                               SingleChildScrollViewScreen(),
                         ),
                       ),
-                  child: const Text('SingleChildScrollView')),
+                  child: const Text(
+                    'SingleChildScrollView',
+                    style: TextStyle(fontSize: 20),
+                  )),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -35,7 +38,10 @@ class HomeScreen extends StatelessWidget {
                               const ListViewScreen(),
                         ),
                       ),
-                  child: const Text('ListViewScreen')),
+                  child: const Text(
+                    'ListViewScreen',
+                    style: TextStyle(fontSize: 20),
+                  )),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -43,7 +49,10 @@ class HomeScreen extends StatelessWidget {
                               const GridViewScreen(),
                         ),
                       ),
-                  child: const Text('GridViewScreen')),
+                  child: const Text(
+                    'GridViewScreen',
+                    style: TextStyle(fontSize: 20),
+                  )),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -51,7 +60,10 @@ class HomeScreen extends StatelessWidget {
                               const ReorderableListViewScreen(),
                         ),
                       ),
-                  child: const Text('ReorderableListViewScreen')),
+                  child: const Text(
+                    'ReorderableListViewScreen',
+                    style: TextStyle(fontSize: 20),
+                  )),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -59,7 +71,10 @@ class HomeScreen extends StatelessWidget {
                               CustomerScrollViewSliverListScreen(),
                         ),
                       ),
-                  child: const Text('CustomerScrollViewScreen-SliverList')),
+                  child: const Text(
+                    'CustomerScrollViewScreen-SliverList',
+                    style: TextStyle(fontSize: 20),
+                  )),
               ElevatedButton(
                   onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
@@ -67,7 +82,10 @@ class HomeScreen extends StatelessWidget {
                               CustomerScrollViewSliverGridScreen(),
                         ),
                       ),
-                  child: const Text('CustomerScrollViewScreen-SliverGrid')),
+                  child: const Text(
+                    'CustomerScrollViewScreen-SliverGrid',
+                    style: TextStyle(fontSize: 20),
+                  )),
             ],
           ),
         ));
