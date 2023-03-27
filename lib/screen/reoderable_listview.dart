@@ -20,9 +20,9 @@ class _ReorderableListViewScreenState extends State<ReorderableListViewScreen> {
         body: ReorderableListView.builder(
           itemBuilder: (context, index) => RenderColorWidget(
               key: Key(index.toString()),
-              color: rainbowColors[index % rainbowColors.length],
-              number: index.toString()),
-          itemCount: 100,
+              color: rainbowColors[numbers[index] % rainbowColors.length],
+              number: numbers[index].toString()),
+          itemCount: numbers.length,
           onReorder: (oldIndex, newIndex) {
             setState(() {
               if (oldIndex < newIndex) {
