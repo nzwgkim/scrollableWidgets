@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:scrollable_widgets/layout/main_layout.dart';
 import 'package:scrollable_widgets/screen/tabBar/appbar_using_controller.dart';
 import 'package:scrollable_widgets/screen/tabBar/basic_tab_bar_screen.dart';
+import 'package:scrollable_widgets/screen/tabBar/bottom_navigation_bar_screen.dart';
 
 class TabBarHome extends StatelessWidget {
   const TabBarHome({super.key});
@@ -25,6 +26,11 @@ class TabBarHome extends StatelessWidget {
                         builder: (context) => const AppBarUsingController(),
                       )),
                   child: const Text('AppBarUsingController')),
+              ElevatedButton(
+                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const BottomNavigationBarScreen(),
+                      )),
+                  child: const Text('BottomNavigationBarScreen')),
             ],
           ),
         ));
