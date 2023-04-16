@@ -2,6 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// FutureBuilder 뽀개버렷!
+/// StreamBuilder 뽀개버렷!
+///
+///
 class FutureBuilderScreen extends StatelessWidget {
   const FutureBuilderScreen({super.key});
 
